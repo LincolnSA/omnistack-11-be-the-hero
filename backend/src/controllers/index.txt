@@ -1,0 +1,27 @@
+Controller é o arquivo que contém a manipulação de cada rota
+aqui é feita a comunicação entre os dados da requisição e a 
+resposta que o backend deve retornar
+
+cada controller 'controla' uma entidade/rota da aplicação
+contendo somente até 5 funções de manipulação como
+
+    index: retorna vários dados do backend
+    show:  retorna somente um dado específico
+    store: cria um dado no backend
+    update: altera um dado no backend
+    destroy: deleta um dado específico no backend
+
+OBS: se necessitar criar mais funções manipuladoras, deve ser 
+    criado outro controller para seguir os padrões MVC
+
+M: models
+    pasta onde fica separado os modelos das entidades que 
+    será salvo no banco de dados
+
+V: views
+    pasta onde ficam separadas as views/pages da aplicação se caso 
+    a aplicação for integrada com o backend e não api separada
+
+C: controller
+    pasta onde fica separada as funções que manipula as rotas
+    e os models para receber e enviar dados do front-end
